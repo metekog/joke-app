@@ -8,7 +8,7 @@ interface JokeItemProps {
 const JokeItem: React.FC<JokeItemProps> = ({ joke }) => {
     const flags = Object.keys(joke.flags)
         .filter(key => joke.flags[key as FlagKeys])
-        .join(" , ")
+        .join(", ")
     return (
         <div>
             <CardWrapper>

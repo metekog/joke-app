@@ -6,7 +6,7 @@ interface CardProps {
 }
 
 const CardWrapper = styled.div<CardProps>`
-  background: ${(props) => props.theme.colors.white};
+  background: ${({ theme }) => theme.colors.white};
   border-radius: 5px;
   margin: 15px 0px;
   max-width: 650px;
@@ -21,7 +21,7 @@ const CardWrapper = styled.div<CardProps>`
 
 const CardTop = styled.div<CardProps>`
   text-align: center;
-  background: ${(props) => props.theme.colors.white};
+  background: ${({ theme }) => theme.colors.white};
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -46,7 +46,7 @@ const Delivery = styled.p<CardProps>`
 `;
 
 const CardBottom = styled.div<CardProps>`
-  background: ${(props) => props.theme.colors?.secondary};
+  background: ${({ theme }) => theme.colors.secondary};
   color: #fff;
   font-size: 16px;
   display: flex;
