@@ -42,7 +42,7 @@ const App = () => {
           <Image src={cat} alt="Cat" />
         </Row>
         <Form onSubmit={getJokes}>
-          <Search type="text" placeholder="Search Joke" value={search} onChange={handleChange} />
+          <Search type="text" placeholder="Type any word.." value={search} onChange={handleChange} />
           <Button type="submit">Submit</Button>
         </Form>
         <div>
